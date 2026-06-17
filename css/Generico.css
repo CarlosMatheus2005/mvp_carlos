@@ -1,50 +1,87 @@
-
-/* Titulo da Página */ 
-.header {
-  padding: 50px;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  font-size: 30px;
-}
-
-.frase{
-    font-size: 40px;
-}
-
-/* Reset default spacing */
+/* CONFIGURAÇÃO GERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Container do Header */
+/* HEADER */
 .main-header {
-  background-color: #1a1a1a;
+  border-bottom: 1px solid #000000; /* Altere a espessura, o estilo e a cor conforme preferir */
+  margin-bottom: 20px;          /* Espaço opcional entre o header e o conteúdo */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 20px 10%;
+  padding: 20px 20%;
 }
 
 /* Menu de Navegação */
 .nav-menu ul {
   display: flex;
   list-style: none;
+  gap: 150px;
 }
 
 .nav-menu li {
-    margin-left: 100px;
+    margin-left: 30px;
 }
 
 .nav-menu a {
-  color: #cccccc;
+  color: #cacaca;
   text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  font-size: 20px;
+  display: inline-block;
+  font-family: "Arial Narrow", sans-serif;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
+
+/* Linha abaixo do texto */
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
 
 /* Efeito para quando passa o mouse no head */
 .nav-menu a:hover {
-  color: #0602ff;
+  color: #000000;
+  transform: scale(1.2);
+}
+
+/* Faz a linha aparecer no hover */
+.nav-menu a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Página atual */
+.nav-menu a.ativo {
+  color: #000000;
+}
+
+/* Mantém a linha visível na página atual */
+.nav-menu a.ativo::after {
+  transform: scaleX(1);
+}
+
+/* Titulo da Página */ 
+.titulo {
+  padding: 0px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family:'Andale Mono', monospace;
+}
+
+.frase{
+    font-size: 20px;
 }
