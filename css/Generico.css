@@ -1,0 +1,50 @@
+
+/* Titulo da Página */ 
+.header {
+  padding: 50px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+
+.frase{
+    font-size: 40px;
+}
+
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container do Header */
+.main-header {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+/* Menu de Navegação */
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 100px;
+}
+
+.nav-menu a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Efeito para quando passa o mouse no head */
+.nav-menu a:hover {
+  color: #0602ff;
+}
