@@ -1,0 +1,14 @@
+.apresentacao {
+  border: 5px solid rgb(0, 0, 0);
+  margin: 20px;
+  display: flex;
+  min-height: 500px;
+}
+.autor{
+    position: absolute;
+    top: 145px;
+    background-color: rgb(255, 255, 255);
+
+    font-size: 45px;
+    margin-left: 50px;
+}
