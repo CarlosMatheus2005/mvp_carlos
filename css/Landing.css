@@ -1,8 +1,10 @@
+/* BOX SOBRE O AUTOR */
 .apresentacao {
   border: 5px solid rgb(235, 235, 235);
   border-radius: 15px;
   margin: 300px;
   margin-top: 35px;
+  margin-bottom: 35px;
   box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
 }
 .autor{
@@ -21,8 +23,49 @@
   text-align: left;
 }
 
-.imagem1{
-  margin-top: 30px;
-  margin-bottom: 10px;
-  border-radius: 20px;
+/* Imagens */ 
+.galeria {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    margin-left: 18%;
+}
+
+.galeria img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: rotacionarImagens 12s infinite ease-in-out;
+}
+
+/* Define para cada imagem o delay */
+.galeria img:nth-child(1) {
+    animation-delay: 0s;
+}
+.galeria img:nth-child(2) {
+    animation-delay: 4s;
+}
+.galeria img:nth-child(3) {
+    animation-delay: 8s;
+}
+.galeria img:nth-child(4) {
+    animation-delay: 12s;
+}
+
+/* Some e aparece */
+@keyframes rotacionarImagens {
+    0% { opacity: 0; }
+    8% { opacity: 1; }      
+    33% { opacity: 1; }    
+    41% { opacity: 0; }     
+    100% { opacity: 0; }
 }
