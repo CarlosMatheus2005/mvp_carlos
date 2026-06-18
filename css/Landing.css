@@ -1,14 +1,28 @@
 .apresentacao {
-  border: 5px solid rgb(0, 0, 0);
-  margin: 20px;
-  display: flex;
-  min-height: 500px;
+  border: 5px solid rgb(235, 235, 235);
+  border-radius: 15px;
+  margin: 300px;
+  margin-top: 35px;
+  box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
 }
 .autor{
-    position: absolute;
-    top: 145px;
-    background-color: rgb(255, 255, 255);
-
     font-size: 45px;
-    margin-left: 50px;
+    margin-left: 20px;
+    display: flex;
+    font-family: "Arial Narrow", sans-serif;
+}
+
+.textinho{
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+}
+
+.imagem1{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 20px;
 }
