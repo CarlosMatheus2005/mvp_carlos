@@ -81,7 +81,7 @@
     border-radius: 10px;
 }
 
-/* BOX SOBRE O AUTOR */
+/* DIV SOBRE O AUTOR */
 .div_apresentacao {
   background-color: rgb(234, 234, 234);
   border-radius: 15px;
@@ -104,7 +104,7 @@
 .p_autor{
     color: rgb(0, 0, 0);
     font-size: 18px;
-    text-align: left;
+    text-align: justify;
     margin-right: 400px;
     margin-top: 10px;
     font-family:Georgia, 'Times New Roman', Times, serif;
