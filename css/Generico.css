@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* HEADER */
+/* HEADER/CABEÇALHO */
 .main-header {
   border-bottom: 1px solid #000000; /* Altere a espessura, o estilo e a cor conforme preferir */
   margin-bottom: 20px;          /* Espaço opcional entre o header e o conteúdo */
@@ -15,7 +15,7 @@
   padding: 20px 20%;
 }
 
-/* Menu de Navegação */
+/* MENU PRINCIPAL */
 .nav-menu ul {
   display: flex;
   list-style: none;
@@ -36,7 +36,7 @@
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Linha abaixo do texto */
+/* LINHA DEBAIXO DO TEXTO */
 .nav-menu a::after {
   content: "";
   position: absolute;
@@ -52,28 +52,28 @@
 }
 
 
-/* Efeito para quando passa o mouse no head */
+/* QUANDO PASSA O MOUSE */
 .nav-menu a:hover {
   color: #000000;
   transform: scale(1.2);
 }
 
-/* Faz a linha aparecer no hover */
+/* LINHA NO HOVER */
 .nav-menu a:hover::after {
   transform: scaleX(1);
 }
 
-/* Página atual */
+/* PÁGINA QUE TÁ ATIVA */
 .nav-menu a.ativo {
   color: #000000;
 }
 
-/* Mantém a linha visível na página atual */
+/* A LINHA FICA NA PÁGINA ATIVA */
 .nav-menu a.ativo::after {
   transform: scaleX(1);
 }
 
-/* Titulo da Página */ 
+/* TITULO DA PÁGINA */ 
 .titulo {
   padding: 0px;
   text-align: center;
