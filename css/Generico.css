@@ -7,8 +7,8 @@
 
 /* HEADER/CABEÇALHO */
 .main-header {
-  border-bottom: 1px solid #000000; /* Altere a espessura, o estilo e a cor conforme preferir */
-  margin-bottom: 20px;          /* Espaço opcional entre o header e o conteúdo */
+  border-bottom: 1px solid #000000;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,8 +73,8 @@
   transform: scaleX(1);
 }
 
-/* TITULO DA PÁGINA */ 
-.titulo {
+/* CORPO DA PÁGINA */ 
+.corpo {
   padding: 0px;
   text-align: center;
   color: rgb(0, 0, 0);
