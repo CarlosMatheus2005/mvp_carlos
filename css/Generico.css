@@ -87,3 +87,21 @@
 }
 
 /* RESPONSIVIDADE PARA CELULAR */
+@media screen and (max-width: 600px) {
+
+  .main-header {
+    padding: 15px 5%;
+  }
+
+  .nav-menu ul {
+    gap: 15px;
+  }
+
+  .nav-menu li {
+    margin-left: 0;
+  }
+
+  .nav-menu a {
+    font-size: 18px;
+  }
+}
