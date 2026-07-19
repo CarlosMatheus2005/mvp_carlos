@@ -10,10 +10,8 @@
     margin-bottom: 5vh;
     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 35vh 35vh;
-    grid-template-areas:    "A B C D" 
-                            "E F G H";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 35vh);
     grid-gap: 10px;
 }
 
@@ -24,56 +22,12 @@
     display: block;
 }
 
-#foto1{
-    grid-area: A;
-}
-
-#foto2{
-    grid-area: B;
-    background-color: green;
-}
-
-#foto3{
-    grid-area: C;
-    background-color: blue;
-}
-
-#foto4{
-    grid-area: D;
-    background-color: rgb(221, 255, 0);
-}
-
-#foto5{
-    grid-area: E;
-    background-color: rgb(255, 0, 195);
-}
-
-#foto6{
-    grid-area: F;
-    background-color: rgb(0, 213, 255);
-}
-
-#foto7{
-    grid-area: G;
-    background-color: rgb(230, 0, 255);
-}
-
-#foto8{
-    grid-area: H;
-    background-color: rgb(255, 136, 0);
-}
-
 @media screen and (max-width: 500px) {
     #container{
+        width: 90vw;
+        margin: 5vh auto;
+
         grid-template-columns: 1fr;
-        grid-template-rows: 35vh 35vh 35vh 35vh 35vh 35vh 35vh 35vh 35vh;
-        grid-template-areas:    "A"
-                                "B"
-                                "C"
-                                "D"
-                                "E"
-                                "F"
-                                "G"
-                                "H";
+        grid-template-rows: 35vh;
     }
 }
